@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Application Development</title>
+    <link rel="stylesheet" href="applicationDevelopment.css">
+</head>
+
+<body>
+    <header id="sticky-header" class="bg-white fixed w-full top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center">
+                    <img src="https://accubeans.com/wp-content/uploads/2024/09/logo-inline-color.png" alt="Logo"
+                        class="h-10 w-auto" />
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="company.html" class="text-gray-600 hover:text-blue-600 font-bold">Company</a>
+                    <div class="relative group">
+                        <button class="flex items-center text-gray-600 hover:text-blue-600 font-bold">
+                            Services
+                            <svg class="ml-2 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-200"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+                        <div
+                            class="absolute left-0 mt-4 w-72 bg-white rounded-xl shadow-2xl opacity-0 invisible scale-95 group-hover:opacity-100 group-hover:visible group-hover:scale-100 transition-all duration-300">
+                            <ul class="p-3 grid gap-2">
+                                <li>
+                                    <a href="websiteDevelopment.html"
+                                        class="block p-2 bg-gray-50 hover:bg-blue-50 transition">Website Development</a>
+                                </li>
+                                <li>
+                                    <a href="applicationDevelopment.html"
+                                        class="block p-2 bg-gray-50 hover:bg-blue-50 transition">Application
+                                        Development</a>
+                                </li>
+                                <li>
+                                    <a href="cloudComputing.html"
+                                        class="block p-2 bg-gray-50 hover:bg-blue-50 transition">Cloud
+                                        Computing</a>
+                                </li>
+                                <li>
+                                    <a href="softwearDevelopment.html"
+                                        class="block p-2 bg-gray-50 hover:bg-blue-50 transition">Software
+                                        Development</a>
+                                </li>
+                                <li>
+                                    <a href="digitalMarketing.html"
+                                        class="block p-2 bg-gray-50 hover:bg-blue-50 transition">Digital
+                                        Marketing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="solution.html" class="text-gray-600 hover:text-blue-600 font-bold">Solutions</a>
+                    <a href="hireTeam.html" class="text-gray-600 hover:text-blue-600 font-bold">Hire Team</a>
+                    <a href="getInTouch.html"
+                        class="ml-4 font-bold relative inline-flex items-center bg-blue-300 py-3 px-10 rounded-xl before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue-500 before:to-purple-500 before:w-0 hover:before:w-full before:transition-all before:duration-500 before:rounded-xl">
+                        <span class="relative z-10 text-black hover:text-white">Get In Touch</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden focus:outline-none" id="menu-toggle">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="text-center px-6 pt-32 pb-32">
+        <h2 class="text-5xl font-extrabold text-gray-900">
+            Custmize
+            <span class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-bold">
+                Mobile Application Development</span>
+        </h2>
+        <p class="text-gray-600 mt-4 text-lg pb-8">
+            Empower your business with high-quality web solutions, delivering
+            seamless user experiences and cutting-edge designs.
+        </p>
+        <button>
+            <a href="getInTouch.html"
+                class="ml-4 font-bold relative inline-flex items-center bg-blue-300 py-3 px-10 rounded-xl before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue-500 before:to-purple-500 before:w-0 hover:before:w-full before:transition-all before:duration-500 before:rounded-xl">
+                <span class="relative z-10 text-black hover:text-white">Get In Touch <i
+                        class="fas fa-arrow-right ml-2"></i></span>
+            </a>
+        </button>
+    </main>
+
+
+    <!-- services -->
+
+    <section class="pt-24 pb-24 bg-gray-900 text-white">
+        <div class="max-w-6xl mx-auto px-6 md:px-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-400">Our Expertise</h3>
+                    <h2 class="text-4xl font-extrabold text-white py-1">
+                        Mobile App Development Services
+                    </h2>
+                </div>
+                <div class="pt-6">
+                    <p class="text-gray-300 mt-4">
+                        We specialize in developing high-performance, feature-rich mobile applications
+                        tailored to your business needs.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 pb-2">
+
+                <!-- Native iOS App -->
+                <div
+                    class="bg-blue-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-blue-200 group transition duration-300 ease-in-out transform hover:scale-105">
+                    <h3 class="font-bold text-lg flex items-center">
+                        <span
+                            class="bg-blue-200 h-6 w-6 rounded-full mr-2 group-hover:bg-blue-100 transition duration-300"></span>
+                        <p>Native iOS Development</p>
+                    </h3>
+                    <hr class="border-gray-400 my-4" />
+                    <p class="text-sm text-gray-700">
+                        We build high-performance iOS apps using Swift and Objective-C for seamless experiences.
+                    </p>
+                </div>
+
+                <!-- Native Android App -->
+                <div
+                    class="bg-green-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-green-200 group transition duration-300 ease-in-outhover:scale-105">
+                    <h3 class="font-bold text-lg flex items-center">
+                        <span
+                            class="bg-green-200 h-6 w-6 rounded-full mr-2 group-hover:bg-green-100 transition duration-300"></span>
+                        Native Android Development
+                    </h3>
+                    <hr class="border-gray-400 my-4" />
+                    <p class="text-sm text-gray-700">
+                        We create powerful Android applications using Kotlin and Java, ensuring scalability and
+                        performance.
+                    </p>
+                </div>
+
+                <!-- Cross-Platform App -->
+                <div
+                    class="bg-purple-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-purple-200 group transition duration-300 ease-in-out hover:scale-105">
+                    <h3 class="font-bold text-lg flex items-center">
+                        <span
+                            class="bg-purple-200 h-6 w-6 rounded-full mr-2 group-hover:bg-purple-100 transition duration-300"></span>
+                        Cross-Platform Development
+                    </h3>
+                    <hr class="border-gray-400 my-4" />
+                    <p class="text-sm text-gray-700">
+                        Build apps that work seamlessly across iOS & Android with Flutter or React Native.
+                    </p>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div
+                    class="bg-yellow-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-yellow-200 group transition duration-300 ease-in-out hover:scale-105">
+                    <h3 class="font-bold text-lg flex items-center">
+                        <span
+                            class="bg-yellow-200 h-6 w-6 rounded-full mr-2 group-hover:bg-yellow-100 transition duration-300"></span>
+                        UI/UX Design
+                    </h3>
+                    <hr class="border-gray-400 my-4" />
+                    <p class="text-sm text-gray-700">
+                        Our design team crafts user-friendly interfaces for an engaging mobile experience.
+                    </p>
+                </div>
+
+                <!-- API Integration -->
+                <div
+                    class="bg-red-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-red-200 group transition duration-300 ease-in-out hover:scale-105">
+                    <h3 class="font-bold text-lg flex items-center">
+                        <span
+                            class="bg-red-200 h-6 w-6 rounded-full mr-2 group-hover:bg-red-100 transition duration-300"></span>
+                        API & Backend Development
+                    </h3>
+                    <hr class="border-gray-400 my-4" />
+                    <p class="text-sm text-gray-700">
+                        We develop robust APIs and backend solutions to support your mobile applications.
+                    </p>
+                </div>
+
+                <!-- App Maintenance -->
+                <div
+                    class="bg-gray-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-gray-200 group transition duration-300 ease-in-out hover:scale-105">
+                    <h3 class="font-bold text-lg flex items-center">
+                        <span
+                            class="bg-gray-200 h-6 w-6 rounded-full mr-2 group-hover:bg-gray-100 transition duration-300"></span>
+                        App Maintenance & Support
+                    </h3>
+                    <hr class="border-gray-400 my-4" />
+                    <p class="text-sm text-gray-700">
+                        Ongoing support and updates to keep your mobile apps running smoothly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="flex items-center justify-center min-h-full p-6">
+        <div class="max-w-3xl text-center bg-white p-8">
+            <h1 class="text-4xl font-bold text-gray-900 leading-tight">
+                Find the Best
+                <span class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-bold">
+                    Custom Mobile Application Development
+                </span>
+                Services
+            </h1>
+
+            <p class="text-gray-700 mt-4 text-lg pb-8">
+                Let's Build Your Vision! Hire expert web developers to craft custom
+                solutions that align with your business needs and goals.
+            </p>
+
+            <button>
+                <a href="getInTouch.html"
+                    class="ml-4 font-bold relative inline-flex items-center bg-blue-300 py-3 px-10 rounded-xl before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue-500 before:to-purple-500 before:w-0 hover:before:w-full before:transition-all before:duration-500 before:rounded-xl">
+                    <span class="relative z-10 text-black hover:text-white">Get In Touch</span>
+                </a>
+            </button>
+        </div>
+    </section>
+
+
+    <section class="bg-gray-50 text-gray-900">
+        <div class="max-w-5xl mx-auto px-6 py-12">
+            <!-- Heading -->
+            <div class="text-center">
+                <h6 class="flex items-center justify-center">How We Work</h6>
+                <h2 class="text-4xl font-extrabold flex items-center justify-center">
+                    <span class="relative">
+                        <span
+                            class="absolute -top-2 -left-4 w-10 h-10 bg-gradient-to-r from-blue-500 to-gray-400 rounded-full opacity-20"></span>
+                        Our Custom Mobile Application Development Process
+                    </span>
+                </h2>
+                <p class="flex items-center justify-center px-40 pt-4">
+                    We follow a structured 11-step process to design, develop, and deploy
+                    innovative mobile applications that deliver seamless user experiences
+                    and drive business growth.
+                </p>
+            </div>
+
+            <!-- Grid Layout -->
+            <div class="mt-12 space-y-8">
+                <!-- Item 1: Diamond -->
+                <div class="flex items-center space-x-6">
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fa-solid fa-gem fa-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div class="max-w-sm">
+                        <h3 class="font-bold text-lg">
+                            Research
+                        </h3>
+                        <p class="text-gray-600 text-sm">
+                            Analyze user needs, platform requirements, and business objectives to create a seamless
+                            mobile experience.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 2: Retail and E-Commerce -->
+                <div class="flex items-center space-x-6">
+                    <div class="max-w-sm text-right">
+                        <h3 class="font-bold text-lg">Market Analysis</h3>
+                        <p class="text-gray-600 text-sm">
+                            Research market trends, analyze competitors, and identify user needs
+                            to create a strategic mobile app development plan.
+                        </p>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fa-solid fa-store fa-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                </div>
+
+                <!-- Item 3: Logistics -->
+                <div class="flex items-center space-x-6">
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fa-solid fa-drafting-compass fa-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div class="max-w-sm">
+                        <h3 class="font-bold text-lg">Wireframing</h3>
+                        <p class="text-gray-600 text-sm">
+                            Create interactive wireframes, optimize user flows, and design
+                            intuitive mobile interfaces that enhance user experience and branding.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 4: Insurance -->
+                <div class="flex items-center space-x-6">
+                    <div class="max-w-sm text-right">
+                        <h3 class="font-bold text-lg">
+                            Technical Feasibility
+                        </h3>
+                        <p class="text-gray-600 text-sm">
+                            Evaluate platform compatibility, assess performance requirements,
+                            and determine the best tech stack for seamless mobile app development.
+                        </p>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fa-solid fa-cogs fa-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-6">
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fa-solid fa-laptop-code fa-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div class="max-w-sm">
+                        <h3 class="font-bold text-lg">Prototyping</h3>
+                        <p class="text-gray-600 text-sm">
+                            Develop interactive mobile app prototypes, test user flows,
+                            and gather feedback to refine functionality and user experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <div class="max-w-sm text-right">
+                        <h3 class="font-bold text-lg">UI/UX Design</h3>
+                        <p class="text-gray-600 text-sm">
+                            Configure hosting, set up domains, deploy on live servers, and
+                            monitor performance
+                        </p>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fa-solid fa-paint-brush fa-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fa-solid fa-code fa-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div class="max-w-sm">
+                        <h3 class="font-bold text-lg">Development</h3>
+                        <p class="text-gray-600 text-sm">
+                            Build scalable mobile applications using modern frameworks,
+                            ensure seamless performance, and integrate essential features
+                            for an optimal user experience.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center space-x-6">
+                    <div class="max-w-sm text-right">
+                        <h3 class="font-bold text-lg">
+                            Testing and QA
+                        </h3>
+                        <p class="text-gray-600 text-sm">
+                            Conduct thorough testing to ensure app stability, performance,
+                            and security, including functional, usability, and compatibility tests.
+                        </p>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fa-solid fa-bug fa-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fa-solid fa-chart-line fa-2xl" style="color: #4f7abf;"></i>
+
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div class="max-w-sm">
+                        <h3 class="font-bold text-lg">Stabilization</h3>
+                        <p class="text-gray-600 text-sm">
+                            Develop wireframes, responsive layouts, and user-friendly
+                            interfaces with branding alignment.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 4: Insurance -->
+                <div class="flex items-center space-x-6">
+                    <div class="max-w-sm text-right">
+                        <h3 class="font-bold text-lg">
+                            Deployment </h3>
+                        <p class="text-gray-600 text-sm">
+                            Optimize app performance, fix bugs, and ensure seamless user experience
+                            before launch through rigorous testing and refinement.
+                        </p>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fa-solid fa-cloud-upload-alt fa-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fa-solid fa-life-ring fa-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div class="max-w-sm">
+                        <h3 class="font-bold text-lg">Support</h3>
+                        <p class="text-gray-600 text-sm">
+                            Provide ongoing maintenance, updates, and technical support
+                            to ensure optimal app performance and user satisfaction.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- Mobile App Development Methodologies -->
+    <section class="pt-24 pb-24 text-gray-900 bg-gray-50 text-white">
+        <div class="max-w-6xl mx-auto px-6 md:px-16">
+            <header class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-lg  text-gray-900 pb-4">Our Custom</h3>
+                    <h2 class="text-4xl font-extrabold  text-black py-1  flex items-center justify-center">
+                        Mobile App Development Methodologies
+                    </h2>
+                </div>
+                <div class="pt-6 text-gray-900">
+                    <p class=" mt-12">
+                        Our agile methodologies ensure effective project management, rapid iteration, and innovative
+                        mobile app solutions
+                        designed for optimal performance and user engagement.
+                    </p>
+                </div>
+            </header>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 pb-2">
+
+                <!-- Scrum -->
+                <article
+                    class="bg-blue-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-blue-200 group transition duration-300 ease-in-out transform hover:scale-105">
+                    <h3 class="font-bold text-lg flex items-center">
+                        <span
+                            class="bg-blue-200 h-6 w-6 rounded-full mr-2 group-hover:bg-blue-100 transition duration-300"></span>
+                        <p>Scrum</p>
+                    </h3>
+                    <hr class="border-gray-400 my-4" />
+                    <p class="text-sm text-gray-700">
+                        We leverage Scrum to drive our mobile app development, ensuring iterative progress, rapid
+                        adaptation, and strong team
+                        collaboration for top-notch project delivery.
+                    </p>
+                </article>
+
+                <!-- Agile -->
+                <article
+                    class="bg-green-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-green-200 group transition duration-300 ease-in-out hover:scale-105">
+                    <h3 class="font-bold text-lg flex items-center">
+                        <span
+                            class="bg-green-200 h-6 w-6 rounded-full mr-2 group-hover:bg-green-100 transition duration-300"></span>
+                        Agile
+                    </h3>
+                    <hr class="border-gray-400 my-4" />
+                    <p class="text-sm text-gray-700">
+                        Our Agile methodology empowers our mobile app development by enabling iterative improvements,
+                        rapid prototyping, and
+                        continuous integration of user feedback.
+                    </p>
+                </article>
+
+                <!-- Lean -->
+                <article
+                    class="bg-purple-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-purple-200 group transition duration-300 ease-in-out hover:scale-105">
+                    <h3 class="font-bold text-lg flex items-center">
+                        <span
+                            class="bg-purple-200 h-6 w-6 rounded-full mr-2 group-hover:bg-purple-100 transition duration-300"></span>
+                        Lean
+                    </h3>
+                    <hr class="border-gray-400 my-4" />
+                    <p class="text-sm text-gray-700">
+                        Our Lean methodology streamlines mobile app development by focusing on essential features,
+                        reducing waste, and
+                        accelerating delivery for high-impact results.
+                    </p>
+                </article>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-8 pb-2">
+                <!-- Kanban -->
+                <article
+                    class="bg-red-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-red-200 group transition duration-300 ease-in-out hover:scale-105">
+                    <h3 class="font-bold text-lg flex items-center">
+                        <span
+                            class="bg-red-200 h-6 w-6 rounded-full mr-2 group-hover:bg-red-100 transition duration-300"></span>
+                        Kanban
+                    </h3>
+                    <hr class="border-gray-400 my-4" />
+                    <p class="text-sm text-gray-700">
+                        Our Kanban system enables real-time tracking of mobile app development tasks, ensuring a
+                        transparent workflow and timely
+                        project delivery.
+                    </p>
+                </article>
+
+                <!-- DevOps -->
+                <article
+                    class="bg-gray-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-gray-200 group transition duration-300 ease-in-out hover:scale-105">
+                    <h3 class="font-bold text-lg flex items-center">
+                        <span
+                            class="bg-gray-200 h-6 w-6 rounded-full mr-2 group-hover:bg-gray-100 transition duration-300"></span>
+                        DevOps
+                    </h3>
+                    <hr class="border-gray-400 my-4" />
+                    <p class="text-sm text-gray-700">
+                        Our DevOps approach integrates mobile app development and operations, ensuring continuous
+                        integration, automated
+                        testing, and seamless deployments for fast, reliable, and scalable app releases.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mx-auto py-10 px-5">
+        <h1 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-6">
+            Our Dynamic Tech for Mobile Apps
+        </h1>
+        <p class="text-lg text-center mb-10">
+            We use cutting-edge technologies to build seamless and powerful mobile applications.
+        </p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 place-items-center px-28 mx-24">
+            <!-- Dart -->
+            <div
+                class="flex flex-col items-center bg-blue-100 p-4 rounded-lg bg-gradient-to-br from-blue-50 to-cyan-100 hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png" alt="Dart Logo"
+                    class="w-16 h-16">
+
+            </div>
+
+            <!-- Flutter -->
+            <div
+                class="flex flex-col items-center p-4 rounded-xl shadow-md bg-gradient-to-br from-blue-50 to-indigo-100 hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png"
+                    alt="Flutter Logo" class="w-16 h-16">
+            </div>
+
+            <!-- Node.js -->
+            <div
+                class="flex flex-col items-center p-4 rounded-xl shadow-md bg-gradient-to-br from-green-50 to-lime-100 hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js Logo"
+                    class="w-16 h-16">
+
+            </div>
+
+            <!-- Figma -->
+            <div
+                class="flex flex-col items-center p-4 rounded-xl shadow-md bg-gradient-to-br from-gray-50 to-gray-200 hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma Logo"
+                    class="w-16 h-16">
+
+            </div>
+
+            <!-- Firebase -->
+            <div
+                class="flex flex-col items-center p-4 rounded-xl shadow-md bg-gradient-to-br from-yellow-50 to-orange-100 hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg" alt="Firebase Logo"
+                    class="w-16 h-16">
+
+            </div>
+
+            <!-- PostgreSQL -->
+            <div
+                class="flex flex-col items-center  p-4 rounded-xl shadow-md bg-gradient-to-br from-blue-50 to-sky-100 hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg"
+                    alt="PostgreSQL Logo" class="w-16 h-16">
+
+            </div>
+
+            <!-- SQLite -->
+            <div
+                class="flex flex-col items-center p-4 rounded-xl shadow-md bg-gradient-to-br from-blue-50 to-teal-100 hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg" alt="SQLite Logo"
+                    class="w-16 h-16">
+
+            </div>
+
+            <!-- Stripe -->
+            <div
+                class="flex flex-col items-center p-4 rounded-xl shadow-md bg-gradient-to-br from-purple-50 to-violet-100 hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Stripe_Logo%2C_revised_2016.svg"
+                    alt="Stripe Logo" class="w-16 h-16">
+
+            </div>
+
+            <!-- PayPal -->
+            <div
+                class="flex flex-col items-center p-4 rounded-xl shadow-md bg-gradient-to-br from-blue-50 to-blue-200 hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal Logo"
+                    class="w-16 h-16">
+
+            </div>
+
+            <!-- MongoDB -->
+            <div
+                class="flex flex-col items-center p-4 rounded-xl shadow-md bg-gradient-to-br from-green-50 to-emerald-100 hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB Logo"
+                    class="w-16 h-16">
+
+            </div>
+
+            <!-- Google Maps -->
+            <div
+                class="flex flex-col items-center  p-4 rounded-xl shadow-md bg-gradient-to-br from-green-50 to-teal-100 hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Google_Maps_logo.svg"
+                    alt="Google Maps Logo" class="w-16 h-16">
+
+            </div>
+
+            <!-- AWS -->
+            <div
+                class="flex flex-col items-center p-4 rounded-xl shadow-md bg-gradient-to-br from-orange-50 to-amber-100 hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
+                    alt="AWS Logo" class="w-16 h-16">
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- subscribe -->
+    <section class="bg-gray-50 flex justify-center max-h-full p-24 h-full">
+        <div class="max-w-6xl mx-auto p-6 bg-white rounded-lg shadow-md">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+                <div>
+                    <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">
+                        Get New Insights Weekly
+                    </h1>
+                    <p class="text-gray-500 mb-6">
+                        Subscribe to our newsletter and get the latest updates on digital
+                        trends, insights, and exclusive offers straight to your inbox.
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col sm:flex-row items-center bg-white rounded-full p-1 w-full shadow-[0_-6px_10px_rgba(0,0,255,0.4)]">
+                    <input type="email" placeholder="Your email address"
+                        class="flex-grow p-4 text-gray-700 rounded-full focus:outline-none w-full sm:w-auto" />
+                    <button
+                        class="bg-white text-gray-800 font-semibold py-2 px-6 rounded-full flex items-center mt-2 sm:mt-0 sm:ml-2">
+                        Subscribe <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class=" flex items-center justify-center">
+        <footer class="bg-black text-white py-28 px-24">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap justify-between">
+                    <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                        <p class="mb-4">
+                            We are AccuBeans – a team of precision-driven innovators who start working the moment we
+                            spot a tech challenge, ensuring
+                            the right solution every time
+                        </p>
+                        <a class="text-gray-400 hover:text-white" href="#">
+                            <i class="fab fa-linkedin fa-2x">
+                            </i>
+                        </a>
+                    </div>
+                    <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                        <h3 class="font-bold mb-4">
+                            Company
+                        </h3>
+                        <ul>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="#">
+                                    Company Overview
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="#">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="#">
+                                    Careers
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="#">
+                                    Solutions
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="#">
+                                    Hire Team
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                        <h3 class="font-bold mb-4">
+                            Service
+                        </h3>
+                        <ul>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="websiteDevelopment.html">
+                                    Website Development
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="applicationDevelopment.html">
+                                    Application Development
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="cloudComputing.html">
+                                    Cloud Computing
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="softwearDevelopment.html">
+                                    Software Development
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="digitalMarketing.html">
+                                    Digital Marketing
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/4">
+                        <h3 class="font-bold mb-4">
+                            Contact Us
+                        </h3>
+                        <ul>
+                            <li class="mb-2 flex items-center">
+                                <i class="fas fa-envelope mr-2">
+                                </i>
+                                <a class="text-gray-400 hover:text-white"
+                                    href="mailto:bhadresh@prilancers-infotech.com">
+                                    getintouch@accubeans.com
+                                </a>
+                            </li>
+                            <li class="mb-2 flex items-center">
+                                <i class="fas fa-phone mr-2">
+                                </i>
+                                <a class="text-gray-400 hover:text-white" href="tel:+919106862019">
+                                    (+91) 9106862019
+                                </a>
+                            </li>
+                            <li class="mb-2 flex items-center">
+                                <i class="fas fa-map-marker-alt mr-2">
+                                </i>
+                                <span class="text-gray-400">
+                                    ACCUBEANS
+                                    55, Rameshwer Park, Opp. Avkar Hall, Maninagar, Ahmedabad-380008
+                                    Gujarat, INDIA.
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-10 border-t border-gray-700 pt-6 flex flex-wrap justify-between items-center">
+                    <p class="text-gray-400 text-sm">
+                        © accubeans 2025 | All rights reserved.
+                    </p>
+                    <div class="flex items-center">
+                        <img alt="GoodFirms badge" class="mr-4" height="50"
+                            src="https://storage.googleapis.com/a1aa/image/f7DMf4Uwhl_i9f2vjZBM5VMZqNDQbVNXwvpIgdFYDso.jpg"
+                            width="50" />
+                        <img alt="Clutch badge" height="50"
+                            src="https://storage.googleapis.com/a1aa/image/QQnrs-FKizKy1Ho1lPlknCuO8X5Wi8BKTFb10R3TDlE.jpg"
+                            width="50" />
+                    </div>
+                    <div class="flex space-x-4 text-gray-400 text-sm">
+                        <a class="hover:text-white" href="#">
+                            Privacy Policy
+                        </a>
+                        <a class="hover:text-white" href="#">
+                            Faqs
+                        </a>
+                        <a class="hover:text-white" href="#">
+                            Terms
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+</body>
+
+</html>

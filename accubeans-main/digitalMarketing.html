@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Digital Marketing</title>
+    <link rel="stylesheet" href="digitalMarketing.css">
+</head>
+
+<body>
+
+    <header id="sticky-header" class="bg-white fixed w-full top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center">
+                    <img src="https://accubeans.com/wp-content/uploads/2024/09/logo-inline-color.png" alt="Logo"
+                        class="h-10 w-auto" />
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="company.html" class="text-gray-600 hover:text-blue-600 font-bold">Company</a>
+                    <div class="relative group">
+                        <button class="flex items-center text-gray-600 hover:text-blue-600 font-bold">
+                            Services
+                            <svg class="ml-2 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-200"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+                        <div
+                            class="absolute left-0 mt-4 w-72 bg-white rounded-xl shadow-2xl opacity-0 invisible scale-95 group-hover:opacity-100 group-hover:visible group-hover:scale-100 transition-all duration-300">
+                            <ul class="p-3 grid gap-2">
+                                <li>
+                                    <a href="websiteDevelopment.html"
+                                        class="block p-2 bg-gray-50 hover:bg-blue-50 transition">Website Development</a>
+                                </li>
+                                <li>
+                                    <a href="applicationDevelopment.html"
+                                        class="block p-2 bg-gray-50 hover:bg-blue-50 transition">Application
+                                        Development</a>
+                                </li>
+                                <li>
+                                    <a href="cloudComputing.html"
+                                        class="block p-2 bg-gray-50 hover:bg-blue-50 transition">Cloud
+                                        Computing</a>
+                                </li>
+                                <li>
+                                    <a href="softwearDevelopment.html"
+                                        class="block p-2 bg-gray-50 hover:bg-blue-50 transition">Software
+                                        Development</a>
+                                </li>
+                                <li>
+                                    <a href="digitalMarketing.html"
+                                        class="block p-2 bg-gray-50 hover:bg-blue-50 transition">Digital
+                                        Marketing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="solution.html" class="text-gray-600 hover:text-blue-600 font-bold">Solutions</a>
+                    <a href="hireTeam.html" class="text-gray-600 hover:text-blue-600 font-bold">Hire Team</a>
+                    <a href="getInTouch.html"
+                        class="ml-4 font-bold relative inline-flex items-center bg-blue-300 py-3 px-10 rounded-xl before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue-500 before:to-purple-500 before:w-0 hover:before:w-full before:transition-all before:duration-500 before:rounded-xl">
+                        <span class="relative z-10 text-black hover:text-white">Get In Touch</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden focus:outline-none" id="menu-toggle">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="text-center px-6 pt-32 pb-32">
+        <h2 class="text-5xl font-extrabold text-gray-900">
+            Gateway to
+            <span class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-bold">
+                Global Success</span>
+        </h2>
+        <p class="text-gray-600 mt-4 text-lg pb-8">
+            The digital age is unstoppable! Digital marketing optimizes resources and boosts conversion rates, making it
+            a vital
+            force for businesses worldwide
+        </p>
+        <button>
+            <a href="getInTouch.html"
+                class="ml-4 font-bold relative inline-flex items-center bg-blue-300 py-3 px-10 rounded-xl before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue-500 before:to-purple-500 before:w-0 hover:before:w-full before:transition-all before:duration-500 before:rounded-xl">
+                <span class="relative z-10 text-black hover:text-white">Get In Touch <i
+                        class="fas fa-arrow-right ml-2"></i></span>
+            </a>
+        </button>
+    </main>
+
+    <section class="bg-gray-900 text-white pt-24 pb-24">
+        <div class="max-w-6xl mx-auto px-16">
+            <div class="grid grid-cols-2">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-400">Our Custom</h3>
+                    <h2 class="text-4xl font-extrabold text-white py-1 inline-block">
+                        Digital Marketing Solutions
+                    </h2>
+                </div>
+                <div class="pt-6">
+                    <p class="text-gray-300 mt-4 max-w-2xl">
+                        We drive business growth through innovative marketing strategies,
+                        data-driven insights, and targeted campaigns designed for success.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Grid Container -->
+            <div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-2 gap-6 mt-8 pb-2">
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-blue-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-blue-200 group transition duration-300 ease-in-out transform hover:scale-105">
+                        <h3 class="font-bold text-lg flex items-center">
+                            <span
+                                class="bg-blue-200 h-6 w-6 rounded-full mr-2 group-hover:bg-blue-100 transition duration-300"></span>
+                            Search Engine Optimization (SEO)
+                        </h3>
+                        <hr class="border-gray-400 my-4" />
+                        <p class="text-sm text-gray-700">
+                            Optimize your website to rank higher on search engines and drive organic traffic.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-purple-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-purple-200 group transition duration-300 ease-in-out transform hover:scale-105">
+                        <h3 class="font-bold text-lg flex items-center">
+                            <span
+                                class="bg-purple-200 h-6 w-6 rounded-full mr-2 group-hover:bg-purple-100 transition duration-300"></span>
+                            Pay-Per-Click (PPC) Advertising
+                        </h3>
+                        <hr class="border-gray-400 my-4" />
+                        <p class="text-sm text-gray-700">
+                            Get instant visibility and maximize ROI with targeted ad campaigns.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-green-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-green-200 group transition duration-300 ease-in-out transform hover:scale-105">
+                        <h3 class="font-bold text-lg flex items-center">
+                            <span
+                                class="bg-green-200 h-6 w-6 rounded-full mr-2 group-hover:bg-green-100 transition duration-300"></span>
+                            Social Media Marketing (SMM)
+                        </h3>
+                        <hr class="border-gray-400 my-4" />
+                        <p class="text-sm text-gray-700">
+                            Engage and grow your audience with powerful social media strategies.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+
+                    <div
+                        class="bg-yellow-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-yellow-200 group transition duration-300 ease-in-out transform hover:scale-105">
+                        <h3 class="font-bold text-lg flex items-center">
+                            <span
+                                class="bg-yellow-200 h-6 w-6 rounded-full mr-2 group-hover:bg-yellow-100 transition duration-300"></span>
+                            Content Marketing
+                        </h3>
+                        <hr class="border-gray-400 my-4" />
+                        <p class="text-sm text-gray-700">
+                            Create compelling content that attracts, engages, and converts your audience.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="flex items-center justify-center min-h-full p-6">
+        <div class="max-w-3xl text-center bg-white p-8">
+            <h1 class="text-4xl font-bold text-gray-900 leading-tight">
+                Find the Best
+                <span class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-bold">
+                    Digital Marketing
+                </span>Services
+            </h1>
+
+            <p class="text-gray-700 mt-4 text-lg pb-8">
+                Let's Build Your Vision! Hire expert web developers to craft custom
+                solutions that align with your business needs and goals.
+            </p>
+
+            <button>
+                <a href="getInTouch.html"
+                    class="ml-4 font-bold relative inline-flex items-center bg-blue-300 py-3 px-10 rounded-xl before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue-500 before:to-purple-500 before:w-0 hover:before:w-full before:transition-all before:duration-500 before:rounded-xl">
+                    <span class="relative z-10 text-black hover:text-white">Get In Touch</span>
+                </a>
+            </button>
+        </div>
+    </section>
+
+    <!-- process -->
+
+    <section class="bg-gray-50 text-gray-900">
+        <div class="max-w-5xl mx-auto px-6 py-12">
+            <!-- Heading -->
+            <div class="text-center">
+                <h6 class="flex items-center justify-center">How We Work</h6>
+                <h2 class="text-4xl font-extrabold flex items-center justify-center">
+                    <span class="relative">
+                        <span
+                            class="absolute -top-2 -left-4 w-10 h-10 bg-gradient-to-r from-blue-500 to-gray-400 rounded-full opacity-20"></span>
+                        Our Digital Marketing Process
+                    </span>
+                </h2>
+                <p class="flex items-center justify-center px-40 pt-4">
+                    A structured 6-step approach to maximize online presence, drive engagement, and generate leads
+                    effectively.
+                </p>
+            </div>
+
+            <!-- Grid Layout -->
+            <div class="mt-12 space-y-8">
+                <!-- Item 1: Diamond -->
+                <div class="flex items-center space-x-6">
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fas fa-chart-line text-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div class="max-w-sm">
+                        <h3 class="font-bold text-lg">
+                            Market Research & Analysis
+                        </h3>
+                        <p class="text-gray-600 text-sm">
+                            Understanding target audience, industry trends, and competitors to create an effective
+                            strategy.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 2: Retail and E-Commerce -->
+                <div class="flex items-center space-x-6">
+                    <div class="max-w-sm text-right">
+                        <h3 class="font-bold text-lg">Content Strategy & Planning</h3>
+                        <p class="text-gray-600 text-sm">
+                            Crafting valuable, relevant content (blogs, videos, social media) that resonates with the
+                            audience..
+                        </p>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fas fa-pen-nib  text-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                </div>
+
+                <!-- Item 3: Logistics -->
+                <div class="flex items-center space-x-6">
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fas fa-search  text-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div class="max-w-sm">
+                        <h3 class="font-bold text-lg">SEO & Website Optimization</h3>
+                        <p class="text-gray-600 text-sm">
+                            Enhancing website structure, content, and performance to improve search rankings and user
+                            experience. </p>
+                    </div>
+                </div>
+
+                <!-- Item 4: Insurance -->
+                <div class="flex items-center space-x-6">
+                    <div class="max-w-sm text-right">
+                        <h3 class="font-bold text-lg">
+                            Social Media & Paid Advertisin
+                        </h3>
+                        <p class="text-gray-600 text-sm">
+                            Running targeted ad campaigns on platforms like Facebook, Instagram, and Google Ads for
+                            maximum ROI.
+                        </p>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fas fa-bullhorn text-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-6">
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fas fa-chart-bar  text-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div class="max-w-sm">
+                        <h3 class="font-bold text-lg">Analytics & Performance Tracking</h3>
+                        <p class="text-gray-600 text-sm">
+                            Using tools like Google Analytics & Meta Business Suite to measure campaign success and
+                            optimize performance.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <div class="max-w-sm text-right">
+                        <h3 class="font-bold text-lg">Lead Generation & Conversion</h3>
+                        <p class="text-gray-600 text-sm">
+                            Implementing email marketing, retargeting ads, and CRO techniques to maximize conversions.
+                        </p>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fas fa-user-check  text-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- methology -->
+
+    <section class="pt-24 pb-24 text-gray-900 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6 md:px-16">
+            <header class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-lg text-gray-900 pb-4">Our Approach</h3>
+                    <h2 class="text-4xl font-extrabold text-black py-1 flex items-center justify-start">
+                        Digital Marketing Strategies
+                    </h2>
+                </div>
+                <div class="pt-6 text-gray-900">
+                    <p class="mt-12">
+                        Our digital marketing strategies focus on data-driven insights, innovative campaigns, and
+                        audience engagement to maximize brand growth and conversions.
+                    </p>
+                </div>
+            </header>
+
+
+
+
+            <!-- Strategies Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 pb-2">
+
+                <article
+                    class="bg-blue-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-blue-200 group transition duration-300 ease-in-out transform hover:scale-105">
+                    <h3 class="font-bold text-lg flex items-center">
+                        <span
+                            class="bg-blue-200 h-6 w-6 rounded-full mr-2 group-hover:bg-blue-100 transition duration-300"></span>
+                        <p>Search Engine Optimization (SEO)</p>
+                    </h3>
+                    <hr class="border-gray-400 my-4" />
+                    <p class="text-sm text-gray-700">
+                        Improve website rankings on search engines through optimized content, keyword targeting, and
+                        technical enhancements.
+                    </p>
+                </article>
+                <article
+                    class="bg-green-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-green-200 group transition duration-300 ease-in-out hover:scale-105">
+                    <h3 class="font-bold text-lg flex items-center">
+                        <span
+                            class="bg-green-200 h-6 w-6 rounded-full mr-2 group-hover:bg-green-100 transition duration-300"></span>
+                        Pay-Per-Click Advertising (PPC)
+                    </h3>
+                    <hr class="border-gray-400 my-4" />
+                    <p class="text-sm text-gray-700">
+                        Maximize ROI with highly targeted paid campaigns on Google Ads, Facebook, and other digital
+                        platforms.
+                    </p>
+                </article>
+
+                <article
+                    class="bg-purple-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-purple-200 group transition duration-300 ease-in-out hover:scale-105">
+                    <h3 class="font-bold text-lg flex items-center">
+                        <span
+                            class="bg-purple-200 h-6 w-6 rounded-full mr-2 group-hover:bg-purple-100 transition duration-300"></span>
+                        Content Marketing
+                    </h3>
+                    <hr class="border-gray-400 my-4" />
+                    <p class="text-sm text-gray-700">
+                        Engage audiences with high-quality blogs, videos, and infographics that drive brand authority
+                        and
+                        customer loyalty.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-8 pb-2">
+                <article
+                    class="bg-red-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-red-200 group transition duration-300 ease-in-out hover:scale-105">
+                    <h3 class="font-bold text-lg flex items-center">
+                        <span
+                            class="bg-red-200 h-6 w-6 rounded-full mr-2 group-hover:bg-red-100 transition duration-300"></span>
+                        Social Media Marketing
+                    </h3>
+                    <hr class="border-gray-400 my-4" />
+                    <p class="text-sm text-gray-700">
+                        Boost brand awareness and customer engagement through strategic campaigns on Facebook,
+                        Instagram,
+                        LinkedIn, and more.
+                    </p>
+                    </p>
+                </article>
+                <article
+                    class="bg-gray-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-gray-200 group transition duration-300 ease-in-out hover:scale-105">
+                    <h3 class="font-bold text-lg flex items-center">
+                        <span
+                            class="bg-gray-200 h-6 w-6 rounded-full mr-2 group-hover:bg-gray-100 transition duration-300"></span>
+                        Email & Automation
+                    </h3>
+                    <hr class="border-gray-400 my-4" />
+                    <p class="text-sm text-gray-700">
+                        Use personalized email marketing and automation to nurture leads and increase conversions
+                        efficiently.
+                    </p>
+                </article>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container mx-auto py-10 px-5">
+        <h1 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-6">
+            Driving Growth with Digital Marketing Technologies
+        </h1>
+        <p class="text-lg text-center mb-10">
+            We leverage the latest digital marketing tools and strategies to enhance online visibility, engagement, and
+            conversions.
+        </p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 place-items-center px-28 mx-24">
+
+            <!-- Google Analytics -->
+            <div class="flex flex-col items-center bg-blue-300 p-4 rounded-lg hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Google_Analytics_Logo.png"
+                    alt="Google Analytics Logo" class="w-16 h-16">
+            </div>
+
+            <!-- Google Ads -->
+            <div class="flex flex-col items-center bg-yellow-300 p-4 rounded-lg hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Google_Ads_logo.svg" alt="Google Ads Logo"
+                    class="w-16 h-16">
+            </div>
+
+            <!-- Facebook Ads -->
+            <div class="flex flex-col items-center bg-blue-500 p-4 rounded-lg hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Facebook_Ads_Logo.png"
+                    alt="Facebook Ads Logo" class="w-16 h-16">
+            </div>
+
+            <!-- Instagram -->
+            <div class="flex flex-col items-center bg-pink-400 p-4 rounded-lg hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo"
+                    class="w-16 h-16">
+            </div>
+
+            <!-- Twitter (X) -->
+            <div class="flex flex-col items-center bg-black p-4 rounded-lg hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/X_logo_2023.svg" alt="Twitter (X) Logo"
+                    class="w-16 h-16">
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="flex flex-col items-center bg-blue-700 p-4 rounded-lg hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+                    alt="LinkedIn Logo" class="w-16 h-16">
+            </div>
+
+            <!-- YouTube -->
+            <div class="flex flex-col items-center bg-red-500 p-4 rounded-lg hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo"
+                    class="w-16 h-16">
+            </div>
+
+            <!-- Mailchimp -->
+            <div class="flex flex-col items-center bg-yellow-400 p-4 rounded-lg hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/Mailchimp_logo.svg/1280px-Mailchimp_logo.svg.png"
+                    alt="Mailchimp Logo" class="w-16 h-16">
+            </div>
+
+            <!-- HubSpot -->
+            <div class="flex flex-col items-center bg-orange-400 p-4 rounded-lg hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/HubSpot_Logo.png" alt="HubSpot Logo"
+                    class="w-16 h-16">
+            </div>
+
+            <!-- SEMrush -->
+            <div class="flex flex-col items-center bg-red-400 p-4 rounded-lg hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/SEMrush_logo.png" alt="SEMrush Logo"
+                    class="w-16 h-16">
+            </div>
+
+            <!-- Ahrefs -->
+            <div class="flex flex-col items-center bg-blue-600 p-4 rounded-lg hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Ahrefs_Logo.svg" alt="Ahrefs Logo"
+                    class="w-16 h-16">
+            </div>
+
+            <!-- Canva -->
+            <div class="flex flex-col items-center bg-teal-400 p-4 rounded-lg hover:scale-105 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Canva_Logo.png" alt="Canva Logo"
+                    class="w-16 h-16">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- subscribe -->
+    <section class="bg-gray-50 flex justify-center max-h-full p-24 h-full">
+        <div class="max-w-6xl mx-auto p-6 bg-white rounded-lg shadow-md">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+                <div>
+                    <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">
+                        Get New Insights Weekly
+                    </h1>
+                    <p class="text-gray-500 mb-6">
+                        Subscribe to our newsletter and get the latest updates on digital
+                        trends, insights, and exclusive offers straight to your inbox.
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col sm:flex-row items-center bg-white rounded-full p-1 w-full shadow-[0_-6px_10px_rgba(0,0,255,0.4)]">
+                    <input type="email" placeholder="Your email address"
+                        class="flex-grow p-4 text-gray-700 rounded-full focus:outline-none w-full sm:w-auto" />
+                    <button
+                        class="bg-white text-gray-800 font-semibold py-2 px-6 rounded-full flex items-center mt-2 sm:mt-0 sm:ml-2">
+                        Subscribe <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class=" flex items-center justify-center">
+        <footer class="bg-black text-white py-28 px-24">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap justify-between">
+                    <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                        <p class="mb-4">
+                            We are AccuBeans – a team of precision-driven innovators who start working the moment we
+                            spot a tech challenge, ensuring
+                            the right solution every time
+                        </p>
+                        <a class="text-gray-400 hover:text-white" href="#">
+                            <i class="fab fa-linkedin fa-2x">
+                            </i>
+                        </a>
+                    </div>
+                    <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                        <h3 class="font-bold mb-4">
+                            Company
+                        </h3>
+                        <ul>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="#">
+                                    Company Overview
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="#">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="#">
+                                    Careers
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="#">
+                                    Solutions
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="#">
+                                    Hire Team
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                        <h3 class="font-bold mb-4">
+                            Service
+                        </h3>
+                        <ul>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="websiteDevelopment.html">
+                                    Website Development
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="applicationDevelopment.html">
+                                    Application Development
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="cloudComputing.html">
+                                    Cloud Computing
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="softwearDevelopment.html">
+                                    Software Development
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="digitalMarketing.html">
+                                    Digital Marketing
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/4">
+                        <h3 class="font-bold mb-4">
+                            Contact Us
+                        </h3>
+                        <ul>
+                            <li class="mb-2 flex items-center">
+                                <i class="fas fa-envelope mr-2">
+                                </i>
+                                <a class="text-gray-400 hover:text-white"
+                                    href="mailto:bhadresh@prilancers-infotech.com">
+                                    getintouch@accubeans.com
+                                </a>
+                            </li>
+                            <li class="mb-2 flex items-center">
+                                <i class="fas fa-phone mr-2">
+                                </i>
+                                <a class="text-gray-400 hover:text-white" href="tel:+919106862019">
+                                    (+91) 9106862019
+                                </a>
+                            </li>
+                            <li class="mb-2 flex items-center">
+                                <i class="fas fa-map-marker-alt mr-2">
+                                </i>
+                                <span class="text-gray-400">
+                                    ACCUBEANS
+                                    55, Rameshwer Park, Opp. Avkar Hall, Maninagar, Ahmedabad-380008
+                                    Gujarat, INDIA.
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-10 border-t border-gray-700 pt-6 flex flex-wrap justify-between items-center">
+                    <p class="text-gray-400 text-sm">
+                        © accubeans 2025 | All rights reserved.
+                    </p>
+                    <div class="flex items-center">
+                        <img alt="GoodFirms badge" class="mr-4" height="50"
+                            src="https://storage.googleapis.com/a1aa/image/f7DMf4Uwhl_i9f2vjZBM5VMZqNDQbVNXwvpIgdFYDso.jpg"
+                            width="50" />
+                        <img alt="Clutch badge" height="50"
+                            src="https://storage.googleapis.com/a1aa/image/QQnrs-FKizKy1Ho1lPlknCuO8X5Wi8BKTFb10R3TDlE.jpg"
+                            width="50" />
+                    </div>
+                    <div class="flex space-x-4 text-gray-400 text-sm">
+                        <a class="hover:text-white" href="#">
+                            Privacy Policy
+                        </a>
+                        <a class="hover:text-white" href="#">
+                            Faqs
+                        </a>
+                        <a class="hover:text-white" href="#">
+                            Terms
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+</body>
+
+</html>

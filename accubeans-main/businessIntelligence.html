@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Business Intelligence</title>
+    <link rel="stylesheet" href="aimi.css">
+</head>
+
+<body>
+    <header id="sticky-header" class="bg-white fixed w-full top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center">
+                    <img src="https://accubeans.com/wp-content/uploads/2024/09/logo-inline-color.png" alt="Logo"
+                        class="h-10 w-auto" />
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="company.html" class="text-gray-600 hover:text-blue-600 font-bold">Company</a>
+                    <div class="relative group">
+                        <button class="flex items-center text-gray-600 hover:text-blue-600 font-bold">
+                            Services
+                            <svg class="ml-2 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-200"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </button>
+                        <div
+                            class="absolute left-0 mt-4 w-72 bg-white rounded-xl shadow-2xl opacity-0 invisible scale-95 group-hover:opacity-100 group-hover:visible group-hover:scale-100 transition-all duration-300">
+                            <ul class="p-3 grid gap-2">
+                                <li>
+                                    <a href="/websiteDevelopment.html"
+                                        class="block p-2 bg-gray-50 hover:bg-blue-50 transition">Website
+                                        Development</a>
+                                </li>
+                                <li>
+                                    <a href="applicationDevelopment.html"
+                                        class="block p-2 bg-gray-50 hover:bg-blue-50 transition">Application
+                                        Development</a>
+                                </li>
+                                <li>
+                                    <a href="cloudComputing.html"
+                                        class="block p-2 bg-gray-50 hover:bg-blue-50 transition">Cloud
+                                        Computing</a>
+                                </li>
+                                <li>
+                                    <a href="softwearDevelopment.html"
+                                        class="block p-2 bg-gray-50 hover:bg-blue-50 transition">Software
+                                        Development</a>
+                                </li>
+                                <li>
+                                    <a href="digitalMarketing.html"
+                                        class="block p-2 bg-gray-50 hover:bg-blue-50 transition">Digital
+                                        Marketing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="solution.html" class="text-gray-600 hover:text-blue-600 font-bold">Solutions</a>
+                    <a href="hireTeam.html" class="text-gray-600 hover:text-blue-600 font-bold">Hire Team</a>
+                    <a href="getInTouch.html"
+                        class=" bg-blue-300 ml-4 font-bold relative inline-flex items-center  py-3 px-10 rounded-xl before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue-500 before:to-purple-500 before:w-0 hover:before:w-full before:transition-all before:duration-500 before:rounded-xl">
+                        <span class="relative z-10 text-black hover:text-white">Get In Touch</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden focus:outline-none" id="menu-toggle">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Full-Screen Mobile Menu -->
+    <div id="mobile-menu"
+        class="fixed top-0 left-0 w-full h-full bg-white z-50 transform -translate-x-full transition-transform duration-300 flex flex-col items-center pt-20 space-y-6">
+        <button id="close-menu" class="absolute top-6 right-6 text-gray-600">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <a href="company.html" class="text-gray-600 text-lg hover:text-blue-600 font-bold">Company</a>
+        <div id="mobile-dropdown" class="w-full flex flex-col items-center">
+            <button class="text-gray-600 text-lg hover:text-blue-600 font-bold flex items-center">
+                Services
+                <svg class="ml-2 w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+            <div class="hidden flex flex-col space-y-2 pt-2">
+                <a href="websiteDevelopment.html" class="text-gray-800">Website Development</a>
+                <a href="applicationDevelopment.html" class="text-gray-800">Application Development</a>
+                <a href="cloudComputing.html" class="text-gray-800">Cloud Computing</a>
+                <a href="softwearDevelopment.html" class="text-gray-800">Software Development</a>
+                <a href="digitalMarketing.html" class="text-gray-800">Digital Marketing</a>
+            </div>
+        </div>
+        <a href="softwearDevelopment.html" class="text-gray-600 text-lg hover:text-blue-600 font-bold">Solutions</a>
+        <a href="hireTeam.html" class="text-gray-600 text-lg hover:text-blue-600 font-bold">Hire Team</a>
+        <a href="getInTouch.html" class="text-gray-600 text-lg hover:text-blue-600 font-bold">Get In Touch</a>
+    </div>
+    <main class="text-center px-6 pt-32 pb-32 bg-white">
+        <h2 class="text-5xl font-extrabold text-gray-900">
+            Scalable
+            <span class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-bold">
+                Business Intelligence </span> Solutions
+        </h2>
+        <p class="text-gray-600 mt-4 text-lg pb-8">
+            Empower your business with high-quality web solutions, delivering
+            seamless user experiences and cutting-edge designs.
+        </p>
+        <button>
+            <a href="getInTouch.html"
+                class="ml-4 font-bold relative inline-flex items-center bg-blue-300 py-3 px-10 rounded-xl before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue-500 before:to-purple-500 before:w-0 hover:before:w-full before:transition-all before:duration-500 before:rounded-xl">
+                <span class="relative z-10 text-black hover:text-white">Get In Touch <i
+                        class="fas fa-arrow-right ml-2"></i></span>
+            </a>
+        </button>
+    </main>
+
+    <section class="bg-gray-900 text-white pt-24 pb-24">
+        <div class="max-w-6xl mx-auto px-16">
+            <div class="grid grid-cols-2">
+                <div class="pr-8">
+                    <h3 class="text-lg font-semibold text-gray-400">Our Custom</h3>
+                    <h2 class="text-4xl font-extrabold text-white py-1  inline-block">
+                        Business Intelligence Services
+                    </h2>
+                </div>
+                <div class="pt-6">
+                    <p class="text-gray-300 mt-4 max-w-2xl">
+                        We empower businesses with data-driven insights, advanced analytics, and intelligent solutions
+                        to optimize decision-making and drive efficiency.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Grid Container -->
+            <div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6 mt-8 pb-2">
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-pink-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-pink-200 group transition duration-300 ease-in-out transform hover:scale-105">
+                        <h3 class="font-bold text-lg flex items-center">
+                            <span
+                                class="bg-pink-200 h-6 w-6 rounded-full mr-2 group-hover:bg-pink-100 transition duration-300"></span>
+                            Data Visualization & Reporting
+                        </h3>
+                        <hr class="border-gray-400 my-4" />
+                        <p class="text-sm text-gray-700">
+                            Create interactive dashboards and reports to gain real-time insights from business data.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-indigo-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-indigo-200 group transition duration-300 ease-in-out transform hover:scale-105">
+                        <h3 class="font-bold text-lg flex items-center">
+                            <span
+                                class="bg-indigo-200 h-6 w-6 rounded-full mr-2 group-hover:bg-indigo-100 transition duration-300"></span>
+                            Predictive Analytics
+                        </h3>
+                        <hr class="border-gray-400 my-4" />
+                        <p class="text-sm text-gray-700">
+                            Utilize historical data and trends to forecast future business outcomes.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-yellow-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-yellow-200 group transition duration-300 ease-in-out transform hover:scale-105">
+                        <h3 class="font-bold text-lg flex items-center">
+                            <span
+                                class="bg-yellow-200 h-6 w-6 rounded-full mr-2 group-hover:bg-yellow-100 transition duration-300"></span>
+                            Data Warehousing Solutions
+                        </h3>
+                        <hr class="border-gray-400 my-4" />
+                        <p class="text-sm text-gray-700">
+                            Centralized data storage solutions to enhance business intelligence and reporting.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-8 pb-2">
+                    <div
+                        class="bg-teal-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-teal-200 group transition duration-300 ease-in-out transform hover:scale-105">
+                        <h3 class="font-bold text-lg flex items-center">
+                            <span
+                                class="bg-teal-200 h-6 w-6 mr-2 rounded-full group-hover:bg-teal-100 transition duration-300"></span>
+                            KPI & Performance Monitoring
+                        </h3>
+                        <hr class="border-gray-400 my-4" />
+                        <p class="text-sm text-gray-700">
+                            Track key business performance metrics in real-time for informed decision-making.
+                        </p>
+                    </div>
+                    <!-- Card 5 -->
+                    <div
+                        class="bg-purple-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-purple-200 group transition duration-300 ease-in-out transform hover:scale-105">
+                        <h3 class="font-bold text-lg flex items-center">
+                            <span
+                                class="bg-purple-200 h-6 w-6 rounded-full mr-2 group-hover:bg-purple-100 transition duration-300"></span>
+                            Data-Driven Business Automation
+                        </h3>
+                        <hr class="border-gray-400 my-4" />
+                        <p class="text-sm text-gray-700">
+                            Automate business processes using real-time data insights and analytics.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6 mt-8 pb-2">
+                    <div
+                        class="bg-green-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-green-200 group transition duration-300 ease-in-out transform hover:scale-105">
+                        <h3 class="font-bold text-lg flex items-center">
+                            <span
+                                class="bg-green-200 h-6 w-6 rounded-full mr-2 group-hover:bg-green-100 transition duration-300"></span>
+                            Business Forecasting Models
+                        </h3>
+                        <hr class="border-gray-400 my-4" />
+                        <p class="text-sm text-gray-700">
+                            Predict business trends and growth opportunities with data-driven insights.
+                        </p>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div
+                        class="bg-orange-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-orange-200 group transition duration-300 ease-in-out transform hover:scale-105">
+                        <h3 class="font-bold text-lg flex items-center">
+                            <span
+                                class="bg-orange-200 h-6 w-6 rounded-full mr-2 group-hover:bg-orange-100 transition duration-300"></span>
+                            Big Data Analytics
+                        </h3>
+                        <hr class="border-gray-400 my-4" />
+                        <p class="text-sm text-gray-700">
+                            Analyze large-scale datasets to uncover hidden business opportunities.
+                        </p>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div
+                        class="bg-gray-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-gray-200 group transition duration-300 ease-in-out transform hover:scale-105">
+                        <h3 class="font-bold text-lg flex items-center">
+                            <span
+                                class="bg-gray-200 h-6 w-6 rounded-full mr-2 group-hover:bg-gray-100 transition duration-300"></span>
+                            Risk Management & Compliance
+                        </h3>
+                        <hr class="border-gray-400 my-4" />
+                        <p class="text-sm text-gray-700">
+                            Real-time risk assessment and compliance monitoring for secure business operations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex items-center justify-center min-h-full p-6">
+        <div class="max-w-3xl text-center bg-white p-8">
+            <h1 class="text-4xl font-bold text-gray-900 leading-tight">
+                Find the Best
+                <span class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-bold">
+                    Business Intelligence
+                </span>
+                Solutions
+            </h1>
+
+            <p class="text-gray-700 mt-4 text-lg pb-8">
+                Unlock the power of Business Intelligence to drive data-driven decisions, optimize operations,
+                and gain actionable insights for growth.
+            </p>
+
+            <button>
+                <a href="getInTouch.html"
+                    class="ml-4 font-bold relative inline-flex items-center bg-blue-300 py-3 px-10 rounded-xl before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue-500 before:to-purple-500 before:w-0 hover:before:w-full before:transition-all before:duration-500 before:rounded-xl">
+                    <span class="relative z-10 text-black hover:text-white">Get In Touch</span>
+                </a>
+            </button>
+        </div>
+    </section>
+
+
+    <section class="bg-gray-50 text-gray-900">
+        <div class="max-w-5xl mx-auto px-6 py-12">
+            <!-- Heading -->
+            <div class="text-center">
+                <h6 class="flex items-center justify-center">How We Work</h6>
+                <h2 class="text-4xl font-extrabold flex items-center justify-center">
+                    <span class="relative">
+                        <span
+                            class="absolute -top-2 -left-4 w-10 h-10 bg-gradient-to-r from-blue-500 to-gray-400 rounded-full opacity-20"></span>
+                        Our Business Intelligence Development Process
+                    </span>
+                </h2>
+                <p class="flex items-center justify-center px-40 pt-4">
+                    As a leading Business Intelligence solutions provider, we follow a structured approach to transform
+                    data
+                    into actionable insights for your business.
+                </p>
+            </div>
+
+            <!-- Grid Layout -->
+            <div class="mt-12 space-y-8">
+                <!-- Item 1: Data Collection & Integration -->
+                <div class="flex items-center space-x-6">
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fa-solid fa-database fa-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div class="max-w-sm">
+                        <h3 class="font-bold text-lg">Data Collection & Integration</h3>
+                        <p class="text-gray-600 text-sm">
+                            Gather and integrate data from multiple sources, ensuring accuracy and consistency.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 2: Data Cleaning & Preparation -->
+                <div class="flex items-center space-x-6">
+                    <div class="max-w-sm text-right">
+                        <h3 class="font-bold text-lg">Data Cleaning & Preparation</h3>
+                        <p class="text-gray-600 text-sm">
+                            Clean, transform, and structure raw data to improve reliability and quality.
+                        </p>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fa-solid fa-filter fa-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                </div>
+
+                <!-- Item 3: Data Analysis & Visualization -->
+                <div class="flex items-center space-x-6">
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fa-solid fa-chart-bar fa-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div class="max-w-sm">
+                        <h3 class="font-bold text-lg">Data Analysis & Visualization</h3>
+                        <p class="text-gray-600 text-sm">
+                            Use BI tools to analyze data, identify trends, and create interactive dashboards.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 4: Reporting & Insights -->
+                <div class="flex items-center space-x-6">
+                    <div class="max-w-sm text-right">
+                        <h3 class="font-bold text-lg">Reporting & Insights</h3>
+                        <p class="text-gray-600 text-sm">
+                            Generate reports with actionable insights to enhance decision-making.
+                        </p>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fa-solid fa-chart-pie fa-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                </div>
+
+                <!-- Item 5: BI Deployment & Integration -->
+                <div class="flex items-center space-x-6">
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fa-solid fa-cloud fa-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div class="max-w-sm">
+                        <h3 class="font-bold text-lg">BI Deployment & Integration</h3>
+                        <p class="text-gray-600 text-sm">
+                            Deploy BI solutions into existing systems, ensuring seamless integration and scalability.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 6: Performance Monitoring & Optimization -->
+                <div class="flex items-center space-x-6">
+                    <div class="max-w-sm text-right">
+                        <h3 class="font-bold text-lg">Performance Monitoring & Optimization</h3>
+                        <p class="text-gray-600 text-sm">
+                            Continuously track BI system performance and refine data models for better accuracy.
+                        </p>
+                    </div>
+                    <div class="flex-1 border-t border-dotted border-gray-300"></div>
+                    <div
+                        class="relative flex items-center justify-center w-16 h-16 bg-white border border-blue-300 rounded-full shadow-md">
+                        <i class="fa-solid fa-cogs fa-2xl" style="color: #4f7abf;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methology -->
+    <section class="pt-12 pb-12 text-gray-900 bg-gray-50 text-white">
+        <div class="max-w-6xl mx-auto px-6 md:px-16">
+            <header class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-lg text-gray-900 pb-4">Our Custom</h3>
+                    <h2 class="text-4xl font-extrabold text-black py-1 flex items-center justify-center">
+                        Business Intelligence Methodologies
+                    </h2>
+                </div>
+                <div class="pt-6 text-gray-900">
+                    <p class="mt-12">
+                        Our structured BI methodologies ensure data-driven decision-making, predictive analytics, and
+                        optimized business performance.
+                    </p>
+                </div>
+            </header>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 pb-2">
+
+                <!-- Data Warehousing -->
+                <article
+                    class="bg-blue-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-blue-200 group transition duration-300 ease-in-out transform hover:scale-105">
+                    <h3 class="font-bold text-lg flex items-center">
+                        <span
+                            class="bg-blue-200 h-6 w-6 rounded-full mr-2 group-hover:bg-blue-100 transition duration-300"></span>
+                        Data Warehousing
+                    </h3>
+                    <hr class="border-gray-400 my-4" />
+                    <p class="text-sm text-gray-700">
+                        Centralized storage of business data for seamless analytics and reporting.
+                    </p>
+                </article>
+
+                <!-- Data Mining -->
+                <article
+                    class="bg-green-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-green-200 group transition duration-300 ease-in-out hover:scale-105">
+                    <h3 class="font-bold text-lg flex items-center">
+                        <span
+                            class="bg-green-200 h-6 w-6 rounded-full mr-2 group-hover:bg-green-100 transition duration-300"></span>
+                        Data Mining
+                    </h3>
+                    <hr class="border-gray-400 my-4" />
+                    <p class="text-sm text-gray-700">
+                        Extracts hidden patterns and insights from large datasets for strategic decisions.
+                    </p>
+                </article>
+
+                <!-- Data Visualization -->
+                <article
+                    class="bg-purple-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-purple-200 group transition duration-300 ease-in-out hover:scale-105">
+                    <h3 class="font-bold text-lg flex items-center">
+                        <span
+                            class="bg-purple-200 h-6 w-6 rounded-full mr-2 group-hover:bg-purple-100 transition duration-300"></span>
+                        Data Visualization
+                    </h3>
+                    <hr class="border-gray-400 my-4" />
+                    <p class="text-sm text-gray-700">
+                        Converts raw data into meaningful, interactive charts and dashboards.
+                    </p>
+                </article>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-8 pb-2">
+
+                <!-- Predictive Analytics -->
+                <article
+                    class="bg-red-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-red-200 group transition duration-300 ease-in-out hover:scale-105">
+                    <h3 class="font-bold text-lg flex items-center">
+                        <span
+                            class="bg-red-200 h-6 w-6 rounded-full mr-2 group-hover:bg-red-100 transition duration-300"></span>
+                        Predictive Analytics
+                    </h3>
+                    <hr class="border-gray-400 my-4" />
+                    <p class="text-sm text-gray-700">
+                        Uses statistical models and AI to forecast trends and future outcomes.
+                    </p>
+                </article>
+
+                <!-- Business Reporting -->
+                <article
+                    class="bg-gray-100 p-6 rounded-lg text-gray-900 shadow-md hover:bg-gray-200 group transition duration-300 ease-in-out hover:scale-105">
+                    <h3 class="font-bold text-lg flex items-center">
+                        <span
+                            class="bg-gray-200 h-6 w-6 rounded-full mr-2 group-hover:bg-gray-100 transition duration-300"></span>
+                        Business Reporting
+                    </h3>
+                    <hr class="border-gray-400 my-4" />
+                    <p class="text-sm text-gray-700">
+                        Generates real-time business reports to support strategic decision-making.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- subscribe -->
+    <section class="bg-gray-50 flex justify-center max-h-full px-24  py-12 h-full">
+        <div class="max-w-6xl mx-auto p-6 bg-white rounded-lg shadow-md">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+                <div>
+                    <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">Get New Insights Weekly</h1>
+                    <p class="text-gray-500 mb-6">Subscribe to our newsletter and get the latest updates on digital
+                        trends,
+                        insights, and exclusive offers straight to your inbox.</p>
+                </div>
+                <div
+                    class="flex flex-col sm:flex-row items-center bg-white rounded-full p-1 w-full shadow-[0_-6px_10px_rgba(0,0,255,0.4)]">
+                    <input type="email" placeholder="Your email address"
+                        class="flex-grow p-4 text-gray-700 rounded-full focus:outline-none w-full sm:w-auto">
+                    <button
+                        class="bg-white text-gray-800 font-semibold py-2 px-6 rounded-full flex items-center mt-2 sm:mt-0 sm:ml-2">
+                        Subscribe <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class=" flex items-center justify-center">
+        <footer class="bg-black text-white py-28 px-24">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap justify-between">
+                    <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                        <p class="mb-4">
+                            We are AccuBeans – a team of precision-driven innovators who start working the moment we
+                            spot a tech challenge, ensuring
+                            the right solution every time
+                        </p>
+                        <a class="text-gray-400 hover:text-white" href="#">
+                            <i class="fab fa-linkedin fa-2x">
+                            </i>
+                        </a>
+                    </div>
+                    <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                        <h3 class="font-bold mb-4">
+                            Company
+                        </h3>
+                        <ul>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="#">
+                                    Company Overview
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="#">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="#">
+                                    Careers
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="#">
+                                    Solutions
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="#">
+                                    Hire Team
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                        <h3 class="font-bold mb-4">
+                            Service
+                        </h3>
+                        <ul>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="websiteDevelopment.html">
+                                    Website Development
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="applicationDevelopment.html">
+                                    Application Development
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="cloudComputing.html">
+                                    Cloud Computing
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="softwearDevelopment.html">
+                                    Software Development
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a class="text-gray-400 hover:text-white" href="digitalMarketing.html">
+                                    Digital Marketing
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/4">
+                        <h3 class="font-bold mb-4">
+                            Contact Us
+                        </h3>
+                        <ul>
+                            <li class="mb-2 flex items-center">
+                                <i class="fas fa-envelope mr-2">
+                                </i>
+                                <a class="text-gray-400 hover:text-white"
+                                    href="mailto:bhadresh@prilancers-infotech.com">
+                                    getintouch@accubeans.com
+                                </a>
+                            </li>
+                            <li class="mb-2 flex items-center">
+                                <i class="fas fa-phone mr-2">
+                                </i>
+                                <a class="text-gray-400 hover:text-white" href="tel:+919106862019">
+                                    (+91) 9106862019
+                                </a>
+                            </li>
+                            <li class="mb-2 flex items-center">
+                                <i class="fas fa-map-marker-alt mr-2">
+                                </i>
+                                <span class="text-gray-400">
+                                    ACCUBEANS
+                                    55, Rameshwer Park, Opp. Avkar Hall, Maninagar, Ahmedabad-380008
+                                    Gujarat, INDIA.
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-10 border-t border-gray-700 pt-6 flex flex-wrap justify-between items-center">
+                    <p class="text-gray-400 text-sm">
+                        © accubeans 2025 | All rights reserved.
+                    </p>
+                    <div class="flex items-center">
+                        <img alt="GoodFirms badge" class="mr-4" height="50"
+                            src="https://storage.googleapis.com/a1aa/image/f7DMf4Uwhl_i9f2vjZBM5VMZqNDQbVNXwvpIgdFYDso.jpg"
+                            width="50" />
+                        <img alt="Clutch badge" height="50"
+                            src="https://storage.googleapis.com/a1aa/image/QQnrs-FKizKy1Ho1lPlknCuO8X5Wi8BKTFb10R3TDlE.jpg"
+                            width="50" />
+                    </div>
+                    <div class="flex space-x-4 text-gray-400 text-sm">
+                        <a class="hover:text-white" href="#">
+                            Privacy Policy
+                        </a>
+                        <a class="hover:text-white" href="#">
+                            Faqs
+                        </a>
+                        <a class="hover:text-white" href="#">
+                            Terms
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>

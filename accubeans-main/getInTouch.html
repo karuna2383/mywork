@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Project Inquiry Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-100 to-gray-200 min-h-screen flex items-center justify-center p-4">
+    <div class="container mx-auto max-w-6xl">
+        <div class="bg-white shadow-2xl rounded-3xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
+            <div
+                class="bg-gradient-to-br from-purple-600 to-blue-500 p-12 text-white flex flex-col justify-center space-y-6">
+                <h2 class="textlg sm:text-2xl font-bold mb-4">Inquire Now</h2>
+                <p class="text-lg opacity-80 mb-6">Connect with our global team. We support international projects
+                    across continents.</p>
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-4"><i class="fas fa-globe text-2xl"></i><span>Global Offices:
+                            USA, UK, India, Singapore</span></div>
+                    <div class="flex items-center space-x-4"><i
+                            class="fas fa-envelope text-2xl"></i><span>global-connect@innovationlab.com</span></div>
+                    <div class="flex items-center space-x-4"><i class="fas fa-phone text-2xl"></i><span>+1 (888)
+                            GLOBAL-TECH</span></div>
+                </div>
+            </div>
+
+            <div class="p-12 relative">
+                <a id="closeButton" href="/" class="absolute top-4 right-6 text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times"></i>
+                </a>
+                <form id="projectInquiryForm" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                            <input type="text" name="fullName"
+                                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-purple-500 focus:ring-2 focus:ring-purple-200"
+                                placeholder="Your Full Name" required />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                            <input type="email" name="email"
+                                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-purple-500 focus:ring-2 focus:ring-purple-200"
+                                placeholder="your.email@example.com" required />
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Country</label>
+                        <select name="country"
+                            class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-purple-500 focus:ring-2 focus:ring-purple-200"
+                            required>
+                            <option value="">Select Your Country</option>
+                            <option>USA</option>
+                            <option>UK</option>
+                            <option>India</option>
+                            <option>Singapore</option>
+                            <option>Germany</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                        <input id="phone" type="tel" name="phoneNumber"
+                            class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-purple-500 focus:ring-2 focus:ring-purple-200"
+                            required />
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Project Budget</label>
+                        <select name="budget"
+                            class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-purple-500 focus:ring-2 focus:ring-purple-200">
+                            <option>Select Budget Range</option>
+                            <option>$1,000 - $5,000</option>
+                            <option>$5,000 - $10,000</option>
+                            <option>$10,000 - $50,000</option>
+                            <option>$50,000+</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Project Category</label>
+                        <select name="projectCategory"
+                            class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-purple-500 focus:ring-2 focus:ring-purple-200">
+                            <option>Select Project Type</option>
+                            <option>Web Development</option>
+                            <option>Mobile App</option>
+                            <option>UI/UX Design</option>
+                            <option>Digital Marketing</option>
+                            <option>Cloud Solutions</option>
+                            <option>AI/Machine Learning</option>
+                            <option>Blockchain</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Project Details</label>
+                        <textarea name="projectDetails"
+                            class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-purple-500 focus:ring-2 focus:ring-purple-200"
+                            rows="4" placeholder="Describe your project vision and requirements"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-gradient-to-r from-purple-600 to-blue-500 text-white py-3 rounded-lg hover:opacity-90 transition duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 group">
+                        <span>Submit Project Inquiry</span>
+                        <i class="fas fa-paper-plane transition-transform group-hover:translate-x-1"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
